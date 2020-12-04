@@ -1,17 +1,32 @@
 {
-  "name": "concat-large-files",
+  "name": "concat-csv-files",
   "version": "1.0.0",
-  "description": "",
+  "description": "Concat lange CSV files",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "DEBUG=app* node --harmony-top-level-await index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "cross-env DEBUG=app* node --harmony-top-level-await index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "stream",
+    "concat",
+    "lange CSV",
+    "concat CSV"
+  ],
+  "author": {
+    "name": "Erick Wendel",
+    "url": "https://github.com/rayllandersotero"
+  },
+  "contributors": [
+    {
+      "name": "Rayllander Sotero",
+      "email": "rayssoldati@gmail.com",
+      "url": "https://github.com/rayllandersotero"
+    }
+  ],
+  "license": "MIT",
   "dependencies": {
+    "cross-env": "^7.0.3",
     "csvtojson": "^2.0.10",
     "debug": "^4.1.1",
     "json-to-csv-stream": "^1.1.0",
